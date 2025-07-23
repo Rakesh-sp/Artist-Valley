@@ -1,0 +1,157 @@
+
+/* Sidebar Container */
+.sidebar {
+  width: 21%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 15px;
+  /* border-top: 1px solid #ddd; */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+    .product_list_wraper{
+         width: 73%;
+    }
+
+
+/* Filter Block */
+.sidebar .filter-block {
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar .filter-block h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+/* Labels */
+.sidebar label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.sidebar input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+  accent-color: #333;
+  position: relative;
+  top: 1px;
+}
+
+/* Price Range */
+.slider-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#price-slider {
+  width: 100%;
+  accent-color: #444;
+}
+
+/* On hover effect */
+.sidebar label:hover {
+  color: #000;
+}
+
+.sidee_bar{
+  display: flex;
+}
+
+.row_listing {
+    display: flex;
+    column-gap: 20px;
+}
+
+ .sidebar .Brands_filter {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.prod_col {
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+ /* Modal styles */
+    .modal {
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .modal-content h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .modal-content label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+
+
+/* Responsive if needed */
+@media (max-width: 768px) {
+  .sidee_bar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

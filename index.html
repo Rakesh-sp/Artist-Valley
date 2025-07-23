@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bootstrap Header</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+      <link href="css/quick-view.css" rel="stylesheet">
+      <link href="css/media.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <div class="header-strip">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-sm-3 strip-left">
+                  <a href="tel:9830293904"><i class="fa fa-phone header-icon"></i> Need Support ?</a>
+               </div>
+               <div class="col-sm-6 strip-center">
+                  <span class="promo-text">Enjoy the sunshine and sizzling <span class="highlight">50% OFF</span> on your favorite items!</span>
+               </div>
+               <div class="col-sm-3 strip-right">
+                  <div class="wishlist-toggle" id="wishlist-icon"> <i class="far fa-heart"></i>  <span id="wishlist-count" class="wishlist-count">0</span></div>
+                  <div id="wishlist-popup" class="wishlist-popup hidden"></div>
+                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signupModal"><span class="account_top">
+                  <i class="far fa-user"></i> Account
+                  </span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="banner_and_nav">
+         <nav class="navbar navbar-expand-lg header_block" style="position: absolute;">
+            <div class="container">
+               <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                     <li class="nav-item"><a class="nav-link" href="listing.html">Collections</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=women">Women</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=men">Men</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=kids">Kids</a></li>
+                     <li class="nav-item"><a class="nav-link" href="category.html?category">All Products</a></li>
+                  </ul>
+                  <div class="nav_right d-flex">
+                     <form class="searche_top" role="search" action="search.html" method="GET">
+                        <div class="custom-searchbar" style="position: relative;">
+                           <input
+                              id="search-input"
+                              name="query"
+                              class="custom-input"
+                              type="text"
+                              placeholder="Find the products you're looking for.."
+                              autocomplete="off"
+                              />
+                           <button type="submit" class="custom-search-btn">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                           </button>
+                           <ul id="search-suggestions" class="suggestions-list"></ul>
+                        </div>
+                     </form>
+                     <div class="cart-icon">
+                        <a href="cart.html" class="text-dark position-relative cart-toggle"><i class="fa-solid fa-cart-shopping"></i>  <span id="cart-count" class="cart-count">0</span></a>
+                        <div class="cart-popup" id="cart-popup">Item added to cart 🛒</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div class="banner_slider">
+            <div class="banner_part banner_1">
+               <div class="container">
+                  <div class="row row_banner">
+                     <div class="col-md-5">
+                        <div class="banner_modal">
+                           <img src="images/banner/banner1_modal.png">
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="banner_text">
+                           <h2>Wear the Vibe</h2>
+                           <h3>THAT FEELS GOOD</h3>
+                           <p>INSIDE AND OUT</p>
+                           <div class="banner_btn">
+                              <a href="category.html?category=women">
+                              SHOP NOW <i class="fa-regular fa-circle-right"></i></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="banner_timer">
+                  <div class="timer_inner">
+                     <h3>Your Deal Ends In : </h3>
+                     <div id="countdown" class="countdown"> 23 : 59 : 46 </div>
+                  </div>
+               </div>
+            </div>
+            <div class="banner_part banner_2">
+               <div class="container">
+                  <div class="row row_banner">
+                     <div class="col-md-5">
+                        <div class="banner_modal">
+                           <img src="images/banner/banner2_modal.png">
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="banner_text">
+                           <h2>THE MODERN</h2>
+                           <h3>SLIM-FIT SHIRT</h3>
+                           <p>Redefining Men’s Style</p>
+                           <div class="banner_btn">
+                              <a href="category.html?category=men">
+                              SHOP NOW <i class="fa-regular fa-circle-right"></i></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="banner_timer">
+                  <div class="timer_inner">
+                     <h3>Your Deal Ends In : </h3>
+                     <div id="countdown" class="countdown"> 23 : 59 : 46 </div>
+                  </div>
+               </div>
+            </div>
+            <div class="banner_part banner_3">
+               <div class="container">
+                  <div class="row row_banner">
+                     <div class="col-md-5">
+                        <div class="banner_modal">
+                           <img src="images/banner/banner3_modal.png">
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="banner_text">
+                           <h2>Sunglasses</h2>
+                           <h3>Every Style and Season</h3>
+                           <p>high-quality sunglasses for men</p>
+                           <div class="banner_btn">
+                              <a href="category.html?category=eyeglasses">
+                              SHOP NOW <i class="fa-regular fa-circle-right"></i></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="banner_timer">
+                  <div class="timer_inner">
+                     <h3>Your Deal Ends In : </h3>
+                     <div id="countdown" class="countdown"> 23 : 59 : 46 </div>
+                  </div>
+               </div>
+            </div>
+            <div class="banner_part banner_4">
+               <div class="container">
+                  <div class="row row_banner">
+                     <div class="col-md-5">
+                        <div class="banner_modal">
+                           <img src="images/banner/banner4_modal.png">
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="banner_text">
+                           <h2>Fresh Styles</h2>
+                           <h3>Soft, breathable fabric</h3>
+                           <p>Because Style Starts With Her.</p>
+                           <div class="banner_btn">
+                              <a href="category.html?category=women">
+                              SHOP NOW <i class="fa-regular fa-circle-right"></i></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="banner_timer">
+                  <div class="timer_inner">
+                     <h3>Your Deal Ends In : </h3>
+                     <div id="countdown" class="countdown"> 23 : 59 : 46 </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="prod_slider_top-wrapper">
+         <div class="container">
+            <div class="prod_top_header">
+               <div class="prod_top_header_left">
+                  <p>EXCLUSIVE DISCOUNT THIS WEEK</p>
+                  <h3>DON'T MISS <span>70% OFF</span> ALL SALE! NO CODE NEEDED!</h3>
+               </div>
+               <div class="prod_top_header_right">
+                  <a class="explore-btn" href="#">Explore To All Products <i class="fa-regular fa-circle-right"></i></a>
+               </div>
+            </div>
+            <div class="slider_prod_top">
+               <div class="slider-item">
+                  <a href="category.html?category=t-shirt">
+                     <div class="top_categories">
+                        <img src="images/tshirt_top.png">
+                     </div>
+                     <h3>T-Shirt</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=bag">
+                     <div class="top_categories">
+                        <img src="images/bag_top.png">
+                     </div>
+                     <h3>Backpack</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=Jacket">
+                     <div class="top_categories">
+                        <img src="images/jacket_top.png">
+                     </div>
+                     <h3>Jacket</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=eyeglasses">
+                     <div class="top_categories"> 
+                        <img src="images/sunglass_top.png">
+                     </div>
+                     <h3>Sunglasses</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=watches">
+                     <div class="top_categories">
+                        <img src="images/watch_top.png">
+                     </div>
+                     <h3>Watch</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=Jewellery">
+                     <div class="top_categories">
+                        <img src="images/jewellery_top.png">
+                     </div>
+                     <h3>Jewellery</h3>
+                  </a>
+               </div>
+               <div class="slider-item">
+                  <a href="category.html?category=purses">
+                     <div class="top_categories">
+                        <img src="images/purses_top.png">
+                     </div>
+                     <h3>Purses</h3>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product_tab">
+         <div class="tab-content">
+            <div id="home" class="tab-pane fade active show">
+               <div class="container-fluid">
+                  <div class="row tab_product_inner">
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>40% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="category.html?category=Jacket">JACKET</a>
+                           </div>
+                           <img src="images/shop_man_1.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>30% off</h3>
+                              <h4>SPECIAL OFFER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="category.html?category=swimming">SWIMMING</a>
+                           </div>
+                           <img src="images/shop_man_2.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>25% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/shop_man_3.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+               <div class="container-fluid">
+                  <div class="row tab_product_inner">
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>40% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_4.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>30% off</h3>
+                              <h4>SPECIAL OFFER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_5.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>25% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_6.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+               <div class="container-fluid">
+                  <div class="row tab_product_inner">
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>40% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_7.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>30% off</h3>
+                              <h4>SPECIAL OFFER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_8.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                     <div class="col-md-4 p_l_r_7">
+                        <div class="tab_product_col">
+                           <div class="tab_text">
+                              <h3>25% off</h3>
+                              <h4>THIS SUMMER</h4>
+                           </div>
+                           <div class="tab_btn">
+                              <a href="#">LEATHER</a>
+                           </div>
+                           <img src="images/tab_img_9.png" class="tap_prod_img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container home_tab">
+               <ul class="nav nav-tabs prod_tab_nav" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" data-bs-toggle="tab" href="#home">SHOP MEN</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#menu1">SHOP WOMEN</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#menu2">SHOP KIDS</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="product_section">
+         <div class="container">
+            <div class="product_section_heading">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <h2>Latest <span>Arrival</span></h2>
+                     <p>Showing our latest arrival on this <span>summer </span> </p>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="home_filter">
+                        <div class="filters">
+                           <select id="filter-category">
+                              <option value="all">All Categories</option>
+                              <option value="women">Women</option>
+                              <option value="men">Men</option>
+                              <option value="kids">kids</option>
+                           </select>
+                           <select id="filter-availability">
+                              <option value="all">All Availability</option>
+                              <option value="stock">In Stock</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="product-list clearfix row product_row" id="product-list"></div>
+            <template id="product-card-template">
+               <div class="col-md-3 prod_col">
+                  <div class="product-card">
+                     <div class="sale_badge_prod">
+                        <div class="discount-sticker"></div>
+                     </div>
+                     <div class="prod_img_with_btn">
+                        <div class="wishlist_incard wishlist" data-id=""><i class="fas fa-heart"></i></div>
+                        <a class="product-link"><img src="" alt="" class="product-img prod_grid_img"></a>
+                        <div class="prod_all_btns">
+                           <div class="prd_add_to_cart_btn add-cart" data-id="">ADD TO CART</div>
+                           <div class="prod_btm_btns">
+                              <div class="prd_eye_btn" data-id=""><i class="far fa-eye"></i></div>
+                              <div class="color-container">
+                                 <div class="color-dots"><select class="size-select form-select form-select-sm mt-2" style="width:auto;"></select></div>
+                              </div>
+                              <div class="bag-shopping" data-id=""><i class="fa-solid fa-cart-shopping"></i></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-info">
+                        <div class="product-name"></div>
+                        <div class="brand"></div>
+                        <div class="product-price">
+                           <div class="price"><span class="original price-old"></span> <span class="discounted price-new"></span></div>
+                        </div>
+                        <div class="sizes">Sizes: <span class="size-list"></span></div>
+                        <div class="rating"></div>
+                     </div>
+                  </div>
+               </div>
+            </template>
+         </div>
+      </div>
+      </div>
+      <div id="quick-view-popup" class="quick-view hidden">
+         <div class="quick-view-overlay"></div>
+         <div class="quick-view-content">
+            <span id="quick-view-close">&times;</span>
+            <div class="quick-view-image-container row">
+               <div class="col-md-7">
+                  <div class="row">
+                     <div class="col-md-2 p-0">
+                        <div id="quick-view-thumbs" class="thumbnail-list"></div>
+                     </div>
+                     <div class="col-md-10">
+                        <img id="quick-view-img" src="" alt="" class="main-image" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5 p-0">
+                  <div id="quick-view-name"></div>
+                  <div id="quick-view-brand"></div>
+                  <div id="quick-view-description"></div>
+                  <div class="selectors">
+                     <div class="color-selector">
+                        <label>Select Color:</label>
+                        <div id="color-options" class="option-list"></div>
+                     </div>
+                     <div class="size-selector">
+                        <label>Select Size:</label>
+                        <div id="size-options" class="option-list"></div>
+                     </div>
+                  </div>
+                  <div id="quick-view-price"></div>
+                  <div id="quick-view-rating"></div>
+                  <div id="quick-view-error" class="error-msg"></div>
+               </div>
+            </div>
+            <div class="row">
+               <button id="buy-now-btn">Buy Now</button>
+            </div>
+         </div>
+      </div>
+      <!-- Zoom Modal -->
+      <div id="zoom-modal" class="zoom-modal hidden">
+         <span id="zoom-close">&times;</span>
+         <img id="zoomed-img" src="" alt="Zoomed Image" />
+         <button id="zoom-prev"><i class="fas fa-chevron-left"></i></button>
+         <button id="zoom-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <section class="summer-banner">
+         <div class="summer-banner-wrapper">
+            <div class="summer-left">
+               <img src="images/small_banner_left_img1.png" alt="Shopping Lady" />
+            </div>
+            <div class="summer-text">
+               <div class="summer-text_left">
+                  <h2>SUMMER</h2>
+                  <h1>SALE</h1>
+               </div>
+               <div class="summer-text_left">
+                  <p class="summer-offer">GET <span class="summer-highlight">50%</span> OFF FOR ALL ITEM</p>
+                  <p class="summer-before-midnight">🍁 BEFORE MIDNIGHT</p>
+                  <div class="summer-icons">
+                     <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-whatsapp"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="summer-right">
+               <img src="images/small_banner_right_img.png" alt="Fashion Man" />
+            </div>
+         </div>
+      </section>
+      <section class="tranding_part">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-3">
+                  <div class="tranding_img">
+                     <a href="category.html?category=women"> <img src="images/tranding_banner_1.png"> </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="tranding_img">
+                     <a href="category.html?category=eyeglasses"> <img src="images/tranding_banner_3.png"> </a> 
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="tranding_img">
+                     <a href="category.html?category=women"> <img src="images/tranding_banner_2.png"> </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="banner_new">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 banner_new1_text">
+                  <h2>Need Winter Boots?</h2>
+                  <p>Step Into Comfort and Durability, Boots Built for Every Journey
+                     Find Your Perfect Pair of Boots, Adventure Starts from the Ground Up
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="testimonial-section">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-8">
+                  <div class="testimonial-slider">
+                     <div class="testimonial-box">
+                        <div class="testimonial-stars">★★★★☆ <span>4.0</span></div>
+                        <h3><i>❝</i>A Beautiful Shopping</h3>
+                        <p>The quality exceeded my expectations and the packaging was so thoughtful. Artist Valley has become my go-to for unique and creative gifts!</p>
+                        <div class="testimonial-user">
+                           <img src="images/castomer1.png" alt="User">
+                           <div class="testimonial-user-info">
+                              <span>John Anderson</span>
+                              <span style="font-size: 12px; color: #999;">Blogger USA</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Slide 2 -->
+                     <div class="testimonial-box">
+                        <div class="testimonial-stars">★★★★☆ <span>4.0</span></div>
+                        <h3> <i>❝</i>Fast Delivery And Amazing</h3>
+                        <p>I ordered a handmade journal and it’s stunning. It feels like it was made just for me. Thank you, Artist Valley, for putting so much love into your work.</p>
+                        <div class="testimonial-user">
+                           <img src="images/castomer2.png" alt="User">
+                           <div class="testimonial-user-info">
+                              <span>John Anderson</span>
+                              <span style="font-size: 12px; color: #999;">Blogger USA</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="testimonial-box">
+                        <div class="testimonial-stars">★★★★☆ <span>4.0</span></div>
+                        <h3><i>❝</i>Fast Delivery And Amazing</h3>
+                        <p>I ordered a handmade journal and it’s stunning. It feels like it was made just for me. Thank you, Artist Valley, for putting so much love into your work.</p>
+                        <div class="testimonial-user">
+                           <img src="images/castomer3.png" alt="User">
+                           <div class="testimonial-user-info">
+                              <span>John Anderson</span>
+                              <span style="font-size: 12px; color: #999;">Blogger USA</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="section-header">
+                     <h2>What Customers Say</h2>
+                     <p>We truly value the feedback from our customers around the world. Their experiences help us grow and ensure we continue delivering products.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="banner_new2_bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 banner_new_text">
+                  <h2>About Artist Valley</h2>
+                  <p>At Artist Valley, we believe that art isn't just something to look at  it's something to live, feel, and share.<br>
+                     Our platform is a curated haven for artists, creators, and art enthusiasts who seek<br>
+                     unique, inspiring, and meaningful creations
+                  </p>
+                  <a href="info.html#privacy">Learnmore <span><img src="images/arrow_icon.svg"></span></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Instagram Section -->
+ 
+      <section class="py-5 text-center instagram-section">
+  <div class="mb-4">
+    <h4 class="fw-bold">WE ARE ON <i class="fab fa-instagram text-danger"></i></h4>
+    <p class="text-muted">Follow Us On Instagram</p>
+  </div>
+
+  <div class="instagram-row">
+    <div class="insta-item">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/insta_1.png" alt="Instagram 1">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+    <div class="insta-item">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/insta_2.png" alt="Instagram 2">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+    <div class="insta-item">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/insta_3.png" alt="Instagram 3">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+    <div class="insta-item">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/insta_4.png" alt="Instagram 4">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+    <div class="insta-item">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/insta_5.png" alt="Instagram 5">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      <footer>
+         <div class="container">
+            <div class="footer-logo">
+               <img src="images/logo.png" alt="Artist Valley Logo">
+            </div>
+            <!-- Navigation -->
+            <div class="footer-nav">
+                   <a href="index.html">HOME</a>
+                   <a href="listing.html">Collections</a>
+                   <a href="category.html?category=women">Women</a>
+                   <a href="category.html?category=men">Men</a>
+                   <a href="category.html?category=kids">Kids</a>
+                   <a href="category.html?category">All Products</a>
+            </div>
+        </ul>
+  <!-- Main Footer -->
+            <div class="footer-section">
+               <div class="row">
+                  <!-- Contact -->
+                  <div class="col-md-4 mb-4">
+                     <h6>CONTACT</h6>
+                     <p><span class="text-muted">Phone :</span> 9830293904</p>
+                     <p><span class="text-muted">Mail :</span> artistvalley@gmail.com</p>
+                     <p><span class="text-muted">Address :</span> 13th Street. 47 W 13th St,<br> New York, NY 10011, USA.</p>
+                  </div>
+                  <!-- Hours -->
+                  <div class="col-md-5 mb-4">
+                     <h6>HOURS</h6>
+                     <p class="text-muted">Pickup Time Slots:</p>
+                     <p>Monday To Friday | 10:00 AM – 5:00 PM</p>
+                     <p>Saturday | 10:00 AM – 2:00 PM</p>
+                     <p>Sunday: Closed</p>
+                  </div>
+                  <!-- Information -->
+                  <div class="col-md-3 mb-4">
+                     <h6>INFORMATIONS</h6>
+                     <p><a href="info.html#about">About Us</a></p>
+                     <p><a href="info.html#contact">Contact Us</a></p>
+                     <p><a href="info.html#terms">Terms And Conditions</a></p>
+                     <p><a href="info.html#privacy">Privacy Policy</a></p>
+                     <p><a href="info.html#career">Career</a></p>
+                  </div>
+               </div>
+               <!-- Social + Cards -->
+               <div class="socialandcard">
+                  <div class="row mt-4">
+                     <div class="col-md-6 text-center">
+                        <p>Connect With Us On</p>
+                        <div class="social-icons">
+                           <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                           <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                           <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                     </div>
+                     <div class="col-md-6 text-center">
+                        <p>We Accepts Card</p>
+                        <div class="cards">
+                           <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                           <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt="Mastercard">
+                           <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="Paypal">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+               <p>© Copyright ArtistValley 2025. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow">
+               <div class="coming-soon">
+                  <i class="fas fa-tools"></i>
+                  <h2>This Feature is Coming Soon</h2>
+                  <p>We’re working hard to bring this feature to you shortly. Thank you for your patience!</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/home.js"></script>
+      <script src="js/filter-index.js"></script>
+      <script src="js/wislist.js"></script>
+      <script src="js/quick-view.js"></script>
+      <script src="js/searche.js"></script>
+   </body>
+</html>

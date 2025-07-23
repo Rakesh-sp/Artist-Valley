@@ -1,0 +1,776 @@
+[
+  
+  {
+    "id": 1,
+    "name": "Printed Gotta Patti Kurta",
+    "description": "A vibrant kurta with intricate Gotta Patti work, perfect for festive and casual occasions. Designed with breathable fabric for all-day comfort.",
+    "brand": "Av crafted",
+    "category": "women",
+    "rating": 1.0,
+    "sizes": ["S", "M", "XL"],
+    "price": 25.0,
+    "discount":2,
+    "availability": "stock",
+    "colors": [
+      { "name": "blue", "image": "images/prod_img/kurta_blue.png" },
+      { "name": "black", "image": "images/prod_img/kurta_black.png" },
+      { "name": "yellow", "image": "images/prod_img/kurta_yellow.png" },
+      { "name": "green", "image": "images/prod_img/kurta_green.png" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Yellow Fit top",
+    "description": "A slim fit top that hugs your body with style and comfort. Ideal for both casual outings and layering.",
+    "brand": "levis",
+    "category": "women",
+    "rating": 5,
+    "sizes": ["XS", "S", "M", "L"],
+    "price": 35.0,
+    "discount": 10,
+    "availability": "stock",
+    "colors": [
+      { "name": "yellow", "image": "images/prod_img/yellow_fit_red.png" },
+      { "name": "white", "image": "images/prod_img/yellow_fit_white.png" },
+      { "name": "black", "image": "images/prod_img/yellow_fit_block.png" },
+      { "name": "green", "image": "images/prod_img/yellow_fit_green.png" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tokyo Talkies Top",
+    "description": "Trendy and lightweight top with modern prints. Perfect for day wear and smart casual evenings.",
+    "brand": "levis",
+    "category": "women",
+    "rating": 4.1,
+    "sizes": ["S", "M", "L"],
+    "price": 45.0,
+    "discount": 5,
+    "availability": "stock",
+    "colors": [
+      { "name": "white", "image": "images/prod_img/tokyo_white.png" },
+      { "name": "black", "image": "images/prod_img/tokyo_black.png" },
+      { "name": "pink", "image": "images/prod_img/tokyo_pink.png" },
+      { "name": "blue", "image": "images/prod_img/tokyo_blue.png" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Claura Midi Dress",
+    "description": "An elegant midi dress for semi-formal wear. Crafted for comfort with flattering fit and versatile color options.",
+    "brand": "Av crafted",
+    "category": "women",
+    "rating": 4.4,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "price": 34.0,
+    "discount": 5,
+    "availability": "stock",
+    "colors": [
+      { "name": "red", "image": "images/prod_img/claura_red.png" },
+      { "name": "yellow", "image": "images/prod_img/claura_yellow.png" },
+      { "name": "blue", "image": "images/prod_img/claura_blue.png" },
+      { "name": "green", "image": "images/prod_img/claura_green.png" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Roadster Men Mauve",
+    "description": "Comfortable and stylish men’s casual wear from Roadster. Soft fabric, regular fit and versatile design.",
+    "brand": "Roadster",
+    "category": ["men", "t-shirt"],
+    "rating": 3.1,
+    "sizes": ["M", "L", "XL"],
+    "price": 31.0,
+    "discount": 5,
+    "availability": "stock",
+    "colors": [
+      { "name": "brown", "image": "images/prod_img/roadster_red.png" },
+      { "name": "black", "image": "images/prod_img/roadster_black.png" },
+      { "name": "green", "image": "images/prod_img/roadster_green.png" },
+      { "name": "yellow", "image": "images/prod_img/roadster_yellow.png" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Allen Solly Fit T-shirt",
+    "description": "Premium slim fit t-shirt with breathable cotton blend. Ideal for gym and daily wear.",
+    "brand": "Allen Solly",
+    "category": ["men", "t-shirt"],
+    "rating": 4.3,
+    "sizes": ["S", "M", "L"],
+    "price": 31.0,
+    "discount": 5,
+    "availability": "stock",
+    "colors": [
+      { "name": "yellow", "image": "images/prod_img/solly_yellow.png" },
+      { "name": "black", "image": "images/prod_img/solly_black.png" },
+      { "name": "pink", "image": "images/prod_img/solly_pink.png" },
+      { "name": "white", "image": "images/prod_img/solly_white.png" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Parcel Yard Casual Shirt",
+    "description": "Everyday essential shirt designed with style and comfort. Perfect for work, parties and layering.",
+    "brand": "Av crafted",
+    "category": "men",
+    "rating": 4.1,
+    "sizes": ["M", "L", "XL"],
+    "price": 33.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "blue", "image": "images/prod_img/parcel_blue.png" },
+      { "name": "black", "image": "images/prod_img/parcel_black.png" },
+      { "name": "white", "image": "images/prod_img/parcel_white.png" },
+      { "name": "brown", "image": "images/prod_img/parcel_brown.png" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Indian Garage Shirt",
+    "description": "Stylish men’s shirt with bold tones and tailored cuts. Crafted from breathable fabrics for an all-day smart look.",
+    "brand": "Indian Garage",
+    "category": "men",
+    "rating": 4.4,
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 37.0,
+    "discount": 5,
+    "availability": "stock",
+    "colors": [
+      { "name": "white", "image": "images/prod_img/garage_white.png" },
+      { "name": "pink", "image": "images/prod_img/garage_pink.png" },
+      { "name": "grey", "image": "images/prod_img/garage_grey.png" },
+      { "name": "red", "image": "images/prod_img/garage_red.png" }
+    ]
+  },
+
+
+
+  {
+    "id":9,
+    "name": "Mandarin Collar Straight",
+    "description": "Boys Blue & White Floral Printed Mandarin Collar Straight Cotton Kurta Blue & whitekurta Floral Printed Has Mandarin neckline",
+    "brand": "Sangria",
+    "category": "kids",
+    "rating": 4.4,
+    "sizes": ["5-9Y", "9-12Y"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "blue", "image": "images/prod_img/mandarin_blue.png" },
+      { "name": "yellow", "image": "images/prod_img/mandarin_yellow.png" },
+      { "name": "pink", "image": "images/prod_img/mandarin_pink.png" }
+    ]
+  },
+
+
+  {
+    "id":10,
+    "name": "Printed Gotta Patti Kurti",
+    "description": "Girls Leheriya Printed Regular Gotta Patti Pure Cotton Straight Kurta with Salwarneckline",
+    "brand": "Baesd",
+    "category": "kids",
+    "rating": 2.4,
+    "sizes": ["5-9Y", "9-12Y"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "green", "image": "images/prod_img/Gotta_green.png" },
+      { "name": "yellow", "image": "images/prod_img/Gotta_yellow.png" },
+      { "name": "pink", "image": "images/prod_img/Gotta_pink.png" }
+    ]
+  },
+
+
+  {
+    "id":11,
+    "name": "Cotton Straight Kurta with Pyjama & Jacket",
+    "description": "Dress your little one in timeless elegance with this Boys Pure Cotton Straight Kurta set. Made from soft, breathable cotton.",
+    "brand": "Superminis",
+    "category": "kids",
+    "rating": 2.4,
+    "sizes": ["2-5Y", "9-12Y"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "green", "image": "images/prod_img/Pyjama_kids_green.png" },
+      { "name": "yellow", "image": "images/prod_img/Pyjama_kids_yellow.png" },
+      { "name": "red", "image": "images/prod_img/Pyjama_kids_red.png" }
+    ]
+  },
+
+    {
+    "id":12,
+    "name": "Boys Spread Collar Solid Cotton Casual Shirt",
+    "description": "Keep it cool and stylish with this Boys Spread Collar Solid Cotton Casual Shirt. Crafted from soft, breathable cotton, this shirt is designed for all-day comfort and effortless style.",
+    "brand": "RARE ONES",
+    "category": "kids",
+    "rating": 2.4,
+    "sizes": ["5-9Y", "9-12Y"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "pink", "image": "images/prod_img/CasualShirtkids_pink.png" },
+      { "name": "white", "image": "images/prod_img/CasualShirtkids_white.png" }
+    ]
+  },
+
+      {
+    "id":13,
+    "name": "Women Black and Green Solid Lightweight Bomber Jacket",
+    "description": "Keep it cool and stylish with this Boys Spread Collar Solid Cotton Casual Shirt. Crafted from soft, breathable cotton, this shirt is designed for all-day comfort and effortless style.",
+    "brand": "STREET 9",
+    "category": ["women", "Jacket"],
+    "rating": 2.4,
+    "sizes": ["S", "M", "L"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "black", "image": "images/prod_img/Jacket_women_black.png" },
+      { "name": "green", "image": "images/prod_img/Jacket_women_green.png" }
+    ]
+  },
+
+        {
+    "id":14,
+    "name": "Men blue and White Solid Lightweight Bomber Jacket",
+    "description": "Stay ahead in style and performance with this Men’s Navy Blue Quick Dry Zipped Jacket. Designed for active comfort, this front-open jacket features a sleek zip closure and quick-dry fabric that keeps you fresh throughout the day.",
+    "brand": "Domyos By Decathlon",
+    "category": ["men", "Jacket"],
+    "rating": 2.4,
+    "sizes": ["S", "M", "L"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "blue", "image": "images/prod_img/Jacket_men_blue.png" },
+      { "name": "white", "image": "images/prod_img/Jacket_men_white.png" }
+    ]
+  },
+
+          {
+    "id":15,
+    "name": "Boys Typography Printed Hooded Front-Open Sweatshirt",
+    "description": "Give your little one a cool and casual look with this Typography Printed Hooded Front-Open Sweatshirt. Crafted from soft and breathable cotton blend fabric, it ensures all-day comfort and warmth.",
+    "brand": "Domyos By Decathlon",
+    "category": ["kids", "Jacket"],
+    "rating": 4.4,
+    "sizes": ["S", "M", "L"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "black", "image": "images/prod_img/Jacket_kids_black.png" },
+      { "name": "white", "image": "images/prod_img/Jacket_kids_white.png" }
+    ]
+  },
+
+{
+    "id":16,
+    "name": "Fit & Flare Dress Jacket",
+    "description": "Turn heads with timeless elegance in this Fit & Flare Dress. Designed to flatter every silhouette, it features a fitted bodice that gently flares into a flowy skirt, creating a chic and feminine look.",
+    "brand": "HERE&NOW",
+    "category": ["kids", "Jacket"],
+    "rating": 4.4,
+    "sizes": ["S", "M", "L"],
+    "price": 37.0,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "brown", "image": "images/prod_img/Jacket_f_kids_brown.png" },
+      { "name": "green", "image": "images/prod_img/Jacket_f_kids_green.png" }
+    ]
+  },
+
+{"id": 17,
+  "name": "Cat Eye Fashion Shades",
+  "description": "Bold cat-eye sunglasses with a modern twist, perfect for statement styling.",
+  "brand": "GlamWear",
+  "category": ["men", "eyeglasses"],
+  "rating": 4.7,
+  "sizes": ["S", "M", "L"],
+  "price": 45.50,
+  "discount": 20,
+  "availability": "stock",
+  "images": [
+    "images/prod_img/men_eye_glass1.png",
+    "images/prod_img/men_eye_glass2.jpg",
+    "images/prod_img/men_eye_glass3.jpg",
+    "images/prod_img/men_eye_glass4.jpg"
+ 
+  ]
+},
+{
+  "id": 18,
+  "name": "Retro Round Sunglasses",
+  "description": "Vintage-inspired round sunglasses with UV protection and lightweight frame.",
+  "brand": "SunChic",
+  "category": ["women", "eyeglasses"],
+  "rating": 4.2,
+  "sizes": ["S", "M", "L"],
+  "price": 38.00,
+  "discount": 15,
+  "availability": "stock",
+  "images": [
+    "images/prod_img/women_sunglass1.jpg",
+    "images/prod_img/women_sunglass2.jpg",
+    "images/prod_img/women_sunglass3.jpg",
+    "images/prod_img/women_sunglass4.jpg"
+  ]
+},
+
+{
+  "id": 19,
+  "name": "Pink Heart Baby Girl Shades",
+  "description": "Adorable heart-shaped sunglasses for baby girls, lightweight and UV protected.",
+  "brand": "TinyTrends",
+  "category": ["kids", "eyeglasses"],
+  "rating": 4.8,
+  "sizes": ["4-5Y", "5-6Y", "6-7Y"],
+  "price": 29.99,
+  "discount": 10,
+  "availability": "stock",
+  "images": [
+    "images/prod_img/baby_girl_sunglass1.jpg",
+    "images/prod_img/baby_girl_sunglass2.jpg",
+    "images/prod_img/baby_girl_sunglass3.jpg",
+    "images/prod_img/baby_girl_sunglass4.jpg"
+  ]
+},
+
+{
+  "id": 20,
+  "name": "Cool Blue Baby Boy Shades",
+  "description": "Trendy blue-tinted sunglasses for baby boys with soft nose pads and full UV protection.",
+  "brand": "MiniStyle",
+  "category": ["kids", "eyeglasses"],
+  "rating": 4.6,
+  "sizes": ["4-5Y", "5-6Y", "6-7Y"],
+  "price": 31.50,
+  "discount": 12,
+  "availability": "stock",
+  "images": [
+    "images/prod_img/baby_boy_sunglass1.jpg",
+    "images/prod_img/baby_boy_sunglass2.jpg",
+    "images/prod_img/baby_boy_sunglass3.jpg",
+    "images/prod_img/baby_boy_sunglass4.jpg"
+    ]
+  },
+
+
+
+  {
+    "id": 21,
+    "name": "Tropical Vibe Men's Swim Shorts",
+    "description": "Quick-dry men's swim shorts with tropical prints, elastic waistband, and inner mesh lining.",
+    "brand": "WaveFlex",
+    "category": ["men", "swimming"],
+    "rating": 4.2,
+    "sizes": ["M", "L", "XL"],
+    "price": 42.00,
+    "discount": 15,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/mens_swimwear1.jpg",
+      "images/prod_img/mens_swimwear2.jpg",
+      "images/prod_img/mens_swimwear3.jpg",
+      "images/prod_img/mens_swimwear4.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Floral Splash Women's Swimsuit",
+    "description": "Stylish one-piece swimsuit with floral print and tummy control fit for a flattering look.",
+    "brand": "AquaChic",
+    "category": ["women", "swimming"],
+    "rating": 4.7,
+    "sizes": ["S", "M", "L"],
+    "price": 55.00,
+    "discount": 10,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/women_swimwear1.jpg",
+      "images/prod_img/women_swimwear2.jpg",
+      "images/prod_img/women_swimwear3.jpg",
+      "images/prod_img/women_swimwear4.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Shark Print Swim Trunks for Boys",
+    "description": "Fun and safe swim trunks with shark prints, perfect for active boys. Comes with UV protection.",
+    "brand": "OceanPlay",
+    "category": ["kids", "swimming"],
+    "rating": 4.4,
+    "sizes": ["4-5Y", "5-6Y", "6-7Y"],
+    "price": 28.99,
+    "discount": 8,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/boys_swimwear2.jpg",
+      "images/prod_img/boys_swimwear3.jpg",
+      "images/prod_img/boys_swimwear1.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mermaid Fantasy Girls' Swimsuit",
+    "description": "Adorable mermaid-themed swimsuit with ruffle straps and soft stretch fabric.",
+    "brand": "LittleSplash",
+    "category": ["kids", "swimming"],
+    "rating": 4.8,
+    "sizes": ["9-12Y", "12-15Y"],
+    "price": 30.50,
+    "discount": 10,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/girls_swimwear1.jpg",
+      "images/prod_img/girls_swimwear2.jpg",
+      "images/prod_img/girls_swimwear3.jpg",
+      "images/prod_img/girls_swimwear4.jpg"
+    ]
+  },
+
+
+  {
+    "id": 25,
+    "name": "Urban Skybag Men's Travel Backpack",
+    "description": "Spacious and durable travel backpack for men with padded laptop compartment and water-resistant design.",
+    "brand": "Skybag",
+    "category": ["men", "bag"],
+    "rating": 4.2,
+    "sizes": ["M", "L"],
+    "price": 58.0,
+    "discount": 10,
+    "availability": "stock",
+    "colors": [
+      { "name": "black", "image": "images/prod_img/backpack_men_black.jpg" },
+      { "name": "navy", "image": "images/prod_img/backpack_men_navy.jpg" }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Elegant Style Women's Backpack",
+    "description": "Chic and functional women's backpack with gold-tone zippers, ideal for daily commuting or casual outings.",
+    "brand": "Puma",
+    "category": ["women", "bag"],
+    "rating": 4.6,
+    "sizes": ["S", "M"],
+    "price": 49.5,
+    "discount": 15,
+    "availability": "stock",
+    "colors": [
+      { "name": "pink", "image": "images/prod_img/backpack_women_pink.jpg" },
+      { "name": "black", "image": "images/prod_img/backpack_women_black.jpg" }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Boys' Cartoon School Backpack",
+    "description": "Fun and colorful school backpack for boys with cartoon prints, side bottle holder, and adjustable straps.",
+    "brand": "KiddoGear",
+    "category": ["kids", "bag"],
+    "rating": 4.3,
+    "sizes": ["4-5Y", "5-6Y", "6-7Y"],
+    "price": 35.0,
+    "discount": 8,
+    "availability": "stock",
+    "colors": [
+      { "name": "red", "image": "images/prod_img/backpack_boy_red.jpg" },
+      { "name": "blue", "image": "images/prod_img/backpack_boy_blue.jpg" }
+
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Girls' Unicorn Print Backpack",
+    "description": "Adorable unicorn-themed backpack for girls with soft straps, glitter detail, and lightweight design.",
+    "brand": "FairyBag",
+    "category": ["kids", "bag"],
+    "rating": 4.7,
+    "sizes": ["onesize"],
+    "price": 37.0,
+    "discount": 10,
+    "availability": "stock",
+    "colors": [
+      { "name": "pink", "image": "images/prod_img/backpack_girl_pink.jpg" },
+      { "name": "white", "image": "images/prod_img/backpack_girl_white.jpg" }
+    ]
+  },
+
+  {
+    "id": 29,
+    "name": "Women's Gold-Plated Hoop Earrings",
+    "description": "Elegant gold-plated hoop earrings with a lightweight design, perfect for festive and daily wear.",
+    "brand": "ShineAura",
+    "category": ["women", "Jewellery"],
+    "rating": 4.7,
+    "price": 39.99,
+    "discount": 15,
+    "availability": "stock",
+    "colors": [
+      { "name": "gold", "image": "images/prod_img/Earrings_gold.jpg" },
+      { "name": "silver", "image": "images/prod_img/Earrings_silver.jpg" }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Women's Silver Layered Necklace",
+    "description": "Trendy layered necklace for women, featuring minimalist pendants and a high-polish silver finish.",
+    "brand": "GleamBelle",
+    "category": ["women", "Jewellery"],
+    "rating": 4.6,
+    "price": 42.00,
+    "discount": 10,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/Necklace1.jpg",
+      "images/prod_img/Necklace2.jpg",
+      "images/prod_img/Necklace3.jpg"    ]
+  },
+  {
+    "id": 31,
+    "name": "Girls' Butterfly Charm Bracelet",
+    "description": "Cute and colorful charm bracelet with butterfly accents, adjustable and safe for kids.",
+    "brand": "LittleGlam",
+    "category": ["kids", "Jewellery"],
+    "rating": 4.6,
+    "sizes": ["S","M"],
+    "price": 22.50,
+    "discount": 10,
+    "availability": "stock",
+ "images": [
+      "images/prod_img/Bracelet1.jpg",
+      "images/prod_img/Bracelet2.jpg",
+      "images/prod_img/Bracelet3.jpg",    
+      "images/prod_img/Bracelet4.jpg" 
+     ]
+  },
+  {
+    "id": 32,
+    "name": "Girls' Heart Pendant Necklace",
+    "description": "Adorable heart pendant necklace for little girls with safe clasp and colorful beads.",
+    "brand": "TinyTrends",
+    "category": ["kids", "Jewellery"],
+    "rating": 4.2,
+    "sizes": ["9-12Y"],
+    "price": 19.99,
+    "discount": 12,
+    "availability": "stock",
+  "images": [
+      "images/prod_img/Pendant1.jpg",
+      "images/prod_img/Pendant2.jpg",
+      "images/prod_img/Pendant3.jpg"   
+     ]
+  },
+
+    {
+    "id": 33,
+    "name": "Classic Leather Tote Bag",
+    "description": "Spacious and stylish leather tote perfect for work or casual outings, featuring inner zip compartments and sturdy handles.",
+    "brand": "BagBliss",
+    "category": ["women", "purses"],
+    "rating": 4.6,
+    "price": 59.99,
+    "discount": 20,
+    "availability": "stock",
+    "colors": [
+      { "name": "green", "image": "images/prod_img/tote_green.jpg" },
+      { "name": "white", "image": "images/prod_img/tote_white.jpg" }
+    ]
+  },
+
+ {
+    "id": 34,
+    "name": "Quilted Chain Sling Bag",
+    "description": "Elegant quilted sling bag with a gold-tone chain strap and flap closure — perfect for parties and evenings.",
+    "brand": "GlamPouch",
+    "category": ["women", "purses"],
+    "rating": 4.2,
+    "price": 19.99,
+    "discount": 12,
+    "availability": "stock",
+  "images": [
+      "images/prod_img/ChainSling1.jpg",
+      "images/prod_img/ChainSling2.jpg",
+      "images/prod_img/ChainSling3.jpg",
+      "images/prod_img/ChainSling4.jpg"   
+     ]
+},
+
+ {
+ "id": 35,
+    "name": "Men Wallets",
+    "description": "Elegant quilted sling Walletsbag  perfect for parties and evenings.",
+    "brand": "Steve Jhonson",
+    "category": ["men", "purses"],
+    "rating": 4.2,
+    "price": 19.99,
+    "discount": 12,
+    "availability": "stock",
+  "images": [
+      "images/prod_img/Wallets-men-1.jpg",
+      "images/prod_img/Wallets-men-2.jpg",
+      "images/prod_img/Wallets-men-3.jpg",
+      "images/prod_img/Wallets-men-4.jpg"   
+     ]
+    },
+
+     {
+ "id": 36,
+    "name": "Men Wallets Genuine Leather with RFID Blocking",
+    "description": "Elegant quilted Men Wallets Genuine Leather with RFID Blocking sling Walletsbag  perfect for parties and evenings.",
+    "brand": "Hayes London",
+    "category": ["men", "purses"],
+    "rating": 4.2,
+    "price": 19.99,
+    "discount": 12,
+    "availability": "stock",
+  "images": [
+      "images/prod_img/Wallets-men-1a.jpg",
+      "images/prod_img/Wallets-men-2b.jpg",
+      "images/prod_img/Wallets-men-3c.jpg",
+      "images/prod_img/Wallets-men-4d.jpg"   
+     ]
+    },
+
+    
+  {
+    "id": 37,
+    "name": "Graphic Printed Cotton T-Shirt",
+    "description": "Casual round-neck cotton T-shirt with a bold graphic print, perfect for everyday wear.",
+    "brand": "StyleCore",
+    "category": ["men", "t-shirt"],
+    "rating": 4.4,
+    "price": 24.99,
+    "discount": 10,
+    "availability": "stock",
+    "colors": [
+      { "name": "green", "image": "images/prod_img/tshirt_graphic_green.jpeg" },
+      { "name": "pink", "image": "images/prod_img/tshirt_graphic_pink.jpeg" },
+      { "name": "black", "image": "images/prod_img/tshirt_graphic_black.jpeg" }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Oversized Solid T-Shirt",
+    "description": "Trendy oversized T-shirt made from soft, breathable fabric with drop shoulders and a relaxed fit.",
+    "brand": "WearEasy",
+    "category": ["women", "t-shirt"],
+    "rating": 4.6,
+    "price": 29.50,
+    "discount": 12,
+    "availability": "stock",
+    "colors": [
+      { "name": "black", "image": "images/prod_img/tshirt_oversized_lavender1.jpeg" },
+      { "name": "yellow", "image": "images/prod_img/tshirt_oversized_lavender2.jpeg" }
+    ]
+  },
+
+  {
+    "id": 39,
+    "name": "Men’s Classic Leather Strap Watch",
+    "description": "Timeless design with a genuine leather strap and analog dial, ideal for both office and casual wear.",
+    "brand": "TimeCraft",
+    "category": ["men", "watches"],
+    "rating": 4.6,
+    "price": 89.99,
+    "discount": 15,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/watch-men-1d.jpg",
+      "images/prod_img/watch-men-1a.jpg",
+      "images/prod_img/watch-men-1c.jpg",
+      "images/prod_img/watch-men-1d.jpg"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Men’s Digital Chrono Sports Watch",
+    "description": "Multi-functional digital watch with stopwatch, alarm, and backlight display for active lifestyles.",
+    "brand": "Clavin Klein",
+    "category": ["men", "watches"],
+    "rating": 4.4,
+    "price": 74.50,
+    "discount": 18,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/watch-men-2a.jpg",
+      "images/prod_img/watch-men-2b.jpg",
+      "images/prod_img/watch-men-2c.jpg",
+      "images/prod_img/watch-men-2d.jpg"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Women’s Rose Gold Mesh Watch",
+    "description": "Stylish rose gold mesh strap with a minimalist dial — perfect for everyday elegance.",
+    "brand": "Fossil",
+    "category": ["women", "watches"],
+    "rating": 4.7,
+    "price": 64.99,
+    "discount": 20,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/watch-women-1a.jpg",
+      "images/prod_img/watch-women-1b.jpg",
+      "images/prod_img/watch-women-1c.jpg",
+      "images/prod_img/watch-women-1d.jpg"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Women’s Diamond Dial Bracelet Watch",
+    "description": "Luxury bracelet-style watch with a diamond-studded dial and polished metal strap.",
+    "brand": "Fastrak",
+    "category": ["women", "watches"],
+    "rating": 4.2,
+    "price": 99.95,
+    "discount": 22,
+    "availability": "stock",
+    "images": [
+      "images/prod_img/watch-women-2a.jpg",
+      "images/prod_img/watch-women-2b.jpg",
+      "images/prod_img/watch-women-2c.jpg",
+      "images/prod_img/watch-women-2d.jpg"
+    ]
+  }
+
+]
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

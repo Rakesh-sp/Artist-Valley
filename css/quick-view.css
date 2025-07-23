@@ -1,0 +1,195 @@
+
+  .quick-view { position: fixed; inset: 0; z-index: 9998; display: flex; justify-content: center; align-items: center; }
+  .quick-view.hidden { display: none; }
+  .quick-view-overlay { position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.5); }
+  .quick-view-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #quick-view-close { position: absolute; top: 10px; right: 16px; font-size: 24px; color: #333; cursor: pointer; }
+
+  .main-image {/* width: 244px; *//* height: 250px; */object-fit: cover;cursor: zoom-in;border-radius: 8px;border: 1px solid #ddd;}
+
+  .thumbnail-list {
+     display: flex;
+     gap: 10px;
+     /* margin-top: 10px; */
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: column;
+  }
+
+  .thumbnail-list img {
+    width: 100%;
+    /* height: 54px; */
+    object-fit: contain;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #d3d3d3;
+    transition: border 0.3s;
+  }
+
+  .thumbnail-list img:hover, .option-list div:hover {
+    border-color: #000;
+  }
+
+  .option-list div.selected {/* border-color: #e60023; */border: 2px solid #000000;}
+
+#quick-view-name {
+  /* styles for product name */
+  font-size: 16px;
+  font-weight: 600;
+  /* margin-top: 10px; */
+}
+
+#quick-view-brand {
+  /* styles for brand */
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+#quick-view-description {
+  /* styles for description */
+  color: #888;
+  font-size: 10px;
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 3px;
+}
+
+#quick-view-price {
+  /* styles for price */
+  margin-top: 10px;
+}
+
+.selectors {
+  /* styles for variant selectors (color, size, etc.) */
+}
+
+#quick-view-rating {
+  /* styles for rating stars or display */
+  font-size: 12px;
+  color: #f58a00;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+  .quick-view-image-container {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+}
+
+
+  #quick-view-price strong { color: #e60023; font-size: 18px; }
+  #quick-view-price s { color: #999; margin-left: 8px; }
+
+  .option-list {display: flex;gap: 10px;flex-wrap: wrap;justify-content: left;margin-top: 2px;}
+
+  .option-list div {
+    /* padding: 8px 12px; */
+    background: #f0f0f0;
+    font-size: 11px;
+    border-radius: 6px;
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    color: #666;
+  }
+
+  #buy-now-btn {
+    margin-top: 20px;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+
+  .error-msg {
+    color: #ff8f8f;
+    font-size: 10px;
+    margin-top: 5px;
+    display: none;
+    /* background: #000; */
+    padding: 0;
+    border-radius: 17px;
+    text-align: left;
+    margin-top: 12px;
+    display: none !important;
+  }
+
+  .zoom-modal {
+    position: fixed; inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+  }
+
+  .zoom-modal.hidden { display: none; }
+
+  .zoom-modal img { max-width: 90%; max-height: 90%; border-radius: 8px; }
+  #zoom-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 30px; cursor: pointer; }
+
+  #color-options .color-dot{
+        height: 18px;
+    width: 18px;
+  }
+
+  .selectors label{
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+.zoom-modal #zoom-prev,#zoom-next{
+
+height: 40px;
+
+display: flex;
+
+width: 40px;
+
+border-radius: 50px;
+
+align-items: center;
+
+justify-content: center;
+
+background: #00000017;
+
+border: 1px solid #858585;
+
+color: #b1b1b1;
+
+margin: 7px;
+}
+
+.size-selector #size-options div{ 
+    padding: 4px 6px;
+}
+
+.size-selector.shake #size-options div{
+background: #ffbdc8;
+}
+.color-selector.shake #color-options div.color-dot{
+border: 3px solid #ffbdc8;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wishlist | Artist Valley</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wishlist-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .wishlist-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .wishlist-item img {
+      width: 80px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .wishlist-info {
+      flex-grow: 1;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .wishlist-name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .remove-btn {
+      font-size: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: red;
+    }
+
+    .empty-message {
+      text-align: center;
+      font-size: 18px;
+      color: #777;
+      padding: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wishlist-container">
+    <h2>My Wishlist</h2>
+    <div id="wishlist-items"></div>
+  </div>
+
+  <script>
+const wishlistContainer = document.getElementById("wishlist-items");
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+function renderWishlistPage() {
+  wishlistContainer.innerHTML = "";
+
+  if (!Array.isArray(wishlist) || wishlist.length === 0) {
+    wishlistContainer.innerHTML = "<p class='empty-message'>Your wishlist is empty.</p>";
+    return;
+  }
+
+  wishlist.forEach((item, index) => {
+    const imageUrl = Array.isArray(item.colors)
+      ? item.colors[0]?.image
+      : item.image || "placeholder.jpg";
+
+    const div = document.createElement("div");
+    div.className = "wishlist-item";
+    div.innerHTML = `
+      <img src="${imageUrl}" alt="${item.name}">
+      <div class="wishlist-info">
+        <div class="wishlist-name">${item.name}</div>
+      </div>
+      <button class="remove-btn" data-index="${index}">&times;</button>
+    `;
+
+    // Navigate to product detail on click
+    div.querySelector(".wishlist-info").addEventListener("click", () => {
+      window.location.href = `details.html?id=${item.id}`;
+    });
+
+    // Remove from wishlist on delete
+    div.querySelector(".remove-btn").addEventListener("click", () => {
+      removeFromWishlist(index);
+    });
+
+    wishlistContainer.appendChild(div);
+  });
+}
+
+function removeFromWishlist(index) {
+  wishlist.splice(index, 1);
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  renderWishlistPage();
+}
+
+renderWishlistPage();
+
+
+  </script>
+</body>
+</html>
