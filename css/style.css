@@ -842,19 +842,19 @@ background: linear-gradient(0deg,rgba(255, 255, 255, 1) 23%, rgba(255, 255, 255,
 .banner_part{padding-top: 1%;position: relative;/* top: -80px; */}
 
 .banner_1{
-  background: url(../images/banner/pink_bg1.jpg);
+  background: url(../images/pink_bg1.jpg);
   background-size: 100% 100%;
 }
 .banner_2{
-  background: url(../images/banner/blue_bg2.jpg);
+  background: url(../images/blue_bg2.jpg);
   background-size: 100% 100%;
 }
 .banner_3{
-  background: url(../images/banner/grey_bg3.jpg);
+  background: url(../images/grey_bg3.jpg);
   background-size: 100% 100%;
 }
 .banner_4{
-  background: url(../images/banner/green_bg4.jpg);
+  background: url(../images/green_bg4.jpg);
   background-size: 100% 100%;
 }
 
