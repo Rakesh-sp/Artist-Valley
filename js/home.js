@@ -3,12 +3,14 @@ let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const productList = document.getElementById("product-list");
-const cartCount = document.getElementById("cart-count");
+const cartCountEls = document.querySelectorAll(".cart-count");
 const wishlistCountEls = document.querySelectorAll(".wishlist-count");
 const popup = document.getElementById("cart-popup");
 
 function updateCartCount() {
-  if (cartCount) cartCount.textContent = cart.length;
+  cartCountEls.forEach(el => {
+    el.textContent = cart.length;
+  });
 }
 
 function updateWishlistCount() {
