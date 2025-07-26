@@ -53,3 +53,9 @@
     .ty_grid{
         background-color: #ffffffb5;
     }
+
+    .ftr_ty a{
+    color: #777;
+    padding: 4px;
+    text-decoration: none;
+    }

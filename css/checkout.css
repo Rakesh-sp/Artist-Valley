@@ -2,9 +2,9 @@
       background: #fff; padding: 30px; border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .form-section { flex: 2; }
+    .form-section {flex: 2;text-align: left;}
     .price-section { flex: 1; }
-    h2 { margin-bottom: 20px; font-size: 20px; }
+    h2 {margin-bottom: 20px;font-size: 20px;text-align: left;font-weight: 700;}
     input, select {
       width: 100%; padding: 10px; margin-bottom: 5px;
       border: 1px solid #ccc; border-radius: 5px; font-size: 14px;
@@ -117,3 +117,12 @@ label.form-check-label {
   max-width: 1200px;
   margin: 0 auto;
 }
+.input_col{
+  margin-bottom: 12px;
+}
+
+ .ty_footer .container a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+    }
