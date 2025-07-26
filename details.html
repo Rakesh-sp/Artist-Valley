@@ -15,70 +15,130 @@
    </head>
    <body>
   
-    
-<div class="header">
-<div class="header-strip">
-   <div class="container">
-      <div class="row align-items-center">
-         <div class="col-sm-3 strip-left">
-            <a href="tel:9830293904"><i class="fa fa-phone header-icon"></i> Need Support ?</a>
-         </div>
-         <div class="col-sm-6 strip-center">
-            <span class="promo-text">Enjoy the sunshine and sizzling <span class="highlight">50% OFF</span> on your favorite items!</span>
-         </div>
-         <div class="col-sm-3 strip-right">
-            <div class="wishlist-toggle" id="wishlist-icon"> <i class="far fa-heart"></i>  <span id="wishlist-count" class="wishlist-count">0</span></div>
-            <div id="wishlist-popup" class="wishlist-popup hidden"></div>
-            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signupModal"><span class="account_top">
-            <i class="far fa-user"></i> Account
-            </span></a>
-         </div>
-      </div>
-   </div>
-</div>
-<div class="banner_and_nav">
-<nav class="navbar navbar-expand-lg header_block">
-   <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="listing.html">Collections</a></li>
-            <li class="nav-item"><a class="nav-link"href="category.html?category=women">Women</a></li>
-            <li class="nav-item"><a class="nav-link"href="category.html?category=men">Men</a></li>
-            <li class="nav-item"><a class="nav-link"href="category.html?category=kids">Kids</a></li>
-            <li class="nav-item"><a class="nav-link" href="category.html?category">All Products</a></li>
-         </ul>
-         <div class="nav_right d-flex">
-            <form class="searche_top" role="search" action="search.html" method="GET">
-               <div class="custom-searchbar" style="position: relative;">
-                  <input
-                     id="search-input"
-                     name="query"
-                     class="custom-input"
-                     type="text"
-                     placeholder="Find the products you're looking for.."
-                     autocomplete="off"
-                     />
-                  <button type="submit" class="custom-search-btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                  <ul id="search-suggestions" class="suggestions-list"></ul>
+   
+      <div class="header-strip">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-sm-3 strip-left">
+                  <a href="tel:9830293904"><i class="fa fa-phone header-icon"></i> Need Support ?</a>
                </div>
-            </form>
-            <div class="cart-icon">
-               <a href="cart.html" class="text-dark position-relative cart-toggle"><i class="fa-solid fa-cart-shopping"></i>  <span id="cart-count" class="cart-count">0</span></a>
-               <div class="cart-popup" id="cart-popup">Item added to cart 🛒</div>
+               <div class="col-sm-6 strip-center">
+                  <span class="promo-text">Enjoy the sunshine and sizzling <span class="highlight">50% OFF</span> on your favorite items!</span>
+               </div>
+               <div class="col-sm-3 strip-right">
+                  <div class="wishlist-toggle" id="wishlist-icon">
+                 <a href="wislist.html">
+  <i class="far fa-heart"></i>
+  <span id="wishlist-count" class="wishlist-count">0</span>
+</a>
+                  </div>
+                  <a href="comingsoon.html"><span class="account_top">
+                  <i class="far fa-user"></i> Account
+                  </span></a>
+               </div>
             </div>
          </div>
       </div>
-   </div>
-</nav>
+      <div class="banner_and_nav">
+
+<div class="m-only">
+<div class="mobile-header">
+  <div class="hamburger">
+  <button class="hamburger-btn" onclick="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </div>
-</div> 
+  <div class="logo">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo">
+    </a>
+  </div>
+
+<div class="search-icon" onclick="toggleSearchbar()">
+  <i class="fas fa-search"></i>
+</div>
+
+  <div class="cart-icon position-relative">
+      <a href="cart.html" class="text-dark position-relative cart-toggle"><i class="fa-solid fa-cart-shopping"></i>  <span id="cart-count" class="cart-count">0</span></a>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+  <div class="custom-searchbar">
+    <input class="custom-input" type="text" placeholder="Find the products you're looking for.." autocomplete="off">
+    <button type="submit" class="custom-search-btn">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <ul class="search-suggestions suggestions-list"></ul>
+  </div>
+</div>
+<div class="side-nav" id="mobileNav">
+   <div class="close-btn_mob" onclick="closeMobileNav()">
+    <i class="fas fa-times"></i>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="listing.html">Collections</a></li>
+    <li><a href="category.html?category=women">Women</a></li>
+    <li><a href="category.html?category=men">Men</a></li>
+    <li><a href="category.html?category=kids">Kids</a></li>
+    <li><a href="category.html?category">All Products</a></li>
+    <li><a href="wislist.html">
+  <i class="far fa-heart"></i>
+  <span id="wishlist-count" class="wishlist-count">4</span>
+</a></li>
+  </ul>
+</div>
+<div class="nav-overlay" id="overlay" onclick="closeMobileNav()"></div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg header_block d-only">
+            <div class="container">
+               <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                     <li class="nav-item"><a class="nav-link" href="listing.html">Collections</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=women">Women</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=men">Men</a></li>
+                     <li class="nav-item"><a class="nav-link"href="category.html?category=kids">Kids</a></li>
+                     <li class="nav-item"><a class="nav-link" href="category.html?category">All Products</a></li>
+                  </ul>
+                  <div class="nav_right d-flex">
+                     <form class="searche_top" role="search" action="search.html" method="GET">
+                        <div class="custom-searchbar" style="position: relative;">
+                           <input
+                              id="search-input"
+                              name="query"
+                              class="custom-input"
+                              type="text"
+                              placeholder="Find the products you're looking for.."
+                              autocomplete="off"
+                              />
+                           <button type="submit" class="custom-search-btn">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                           </button>
+                           <ul id="search-suggestions" class="suggestions-list"></ul>
+                        </div>
+                     </form>
+                     <div class="cart-icon">
+                        <a href="cart.html" class="text-dark position-relative cart-toggle"><i class="fa-solid fa-cart-shopping"></i>  <span id="cart-count" class="cart-count">0</span></a>
+
+                         
+                        <div class="cart-popup" id="cart-popup">Item added to cart 🛒</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         </div> 
+
+        
 
 
 
@@ -448,10 +508,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <script src="js/slick.js"></script>
-      <script src="js/wislist.js"></script>
       <script src="js/script.js"></script>
       <script src="js/details.js"></script>
       <script src="js/breadcrumb.js"></script>
+      <script src="js/searche.js"></script>
+      <script src="js/mobmenu.js"></script>
 
 
 

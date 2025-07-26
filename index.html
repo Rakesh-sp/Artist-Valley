@@ -8,8 +8,8 @@
       <link href="css/style.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/slick.css"/>
       <link href="css/quick-view.css" rel="stylesheet">
-      <link href="css/media.css?v=1" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="css/media.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    </head>
@@ -24,9 +24,13 @@
                   <span class="promo-text">Enjoy the sunshine and sizzling <span class="highlight">50% OFF</span> on your favorite items!</span>
                </div>
                <div class="col-sm-3 strip-right">
-                  <div class="wishlist-toggle" id="wishlist-icon"> <i class="far fa-heart"></i>  <span id="wishlist-count" class="wishlist-count">0</span></div>
-                  <div id="wishlist-popup" class="wishlist-popup hidden"></div>
-                  <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signupModal"><span class="account_top">
+                  <div class="wishlist-toggle" id="wishlist-icon">
+                 <a href="wislist.html">
+  <i class="far fa-heart"></i>
+  <span id="wishlist-count" class="wishlist-count">0</span>
+</a>
+                  </div>
+                   <a href="comingsoon.html"><span class="account_top">
                   <i class="far fa-user"></i> Account
                   </span></a>
                </div>
@@ -34,7 +38,65 @@
          </div>
       </div>
       <div class="banner_and_nav">
-         <nav class="navbar navbar-expand-lg header_block" style="position: absolute;">
+
+<div class="m-only">
+<div class="mobile-header">
+  <div class="hamburger">
+  <button class="hamburger-btn" onclick="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+  <div class="logo">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo">
+    </a>
+  </div>
+
+<div class="search-icon" onclick="toggleSearchbar()">
+  <i class="fas fa-search"></i>
+</div>
+
+  <div class="cart-icon position-relative">
+    <a href="cart.html" class="text-dark cart-toggle">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count">0</span>
+    </a>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+  <div class="custom-searchbar">
+    <input class="custom-input" type="text" placeholder="Find the products you're looking for.." autocomplete="off">
+    <button type="submit" class="custom-search-btn">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <ul class="search-suggestions suggestions-list"></ul>
+  </div>
+</div>
+<div class="side-nav" id="mobileNav">
+   <div class="close-btn_mob" onclick="closeMobileNav()">
+    <i class="fas fa-times"></i>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="listing.html">Collections</a></li>
+    <li><a href="category.html?category=women">Women</a></li>
+    <li><a href="category.html?category=men">Men</a></li>
+    <li><a href="category.html?category=kids">Kids</a></li>
+    <li><a href="category.html?category">All Products</a></li>
+    <li><a href="wislist.html">
+  <i class="far fa-heart"></i>
+  <span id="wishlist-count" class="wishlist-count">0</span>
+</a></li>
+  </ul>
+</div>
+<div class="nav-overlay" id="overlay" onclick="closeMobileNav()"></div>
+</div>
+</div>
+
+
+         <nav class="navbar navbar-expand-lg header_block d-only" style="position: absolute;">
             <div class="container">
                <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -80,7 +142,7 @@
                   <div class="row row_banner">
                      <div class="col-md-5">
                         <div class="banner_modal">
-                           <img src="images/banner1_modal.png">
+                           <img src="images/banner/banner1_modal.png">
                         </div>
                      </div>
                      <div class="col-md-7">
@@ -109,7 +171,7 @@
                   <div class="row row_banner">
                      <div class="col-md-5">
                         <div class="banner_modal">
-                           <img src="images/banner2_modal.png">
+                           <img src="images/banner/banner2_modal.png">
                         </div>
                      </div>
                      <div class="col-md-7">
@@ -138,7 +200,7 @@
                   <div class="row row_banner">
                      <div class="col-md-5">
                         <div class="banner_modal">
-                           <img src="images/banner3_modal.png">
+                           <img src="images/banner/banner3_modal.png">
                         </div>
                      </div>
                      <div class="col-md-7">
@@ -167,7 +229,7 @@
                   <div class="row row_banner">
                      <div class="col-md-5">
                         <div class="banner_modal">
-                           <img src="images/banner4_modal.png">
+                           <img src="images/banner/banner4_modal.png">
                         </div>
                      </div>
                      <div class="col-md-7">
@@ -436,7 +498,7 @@
             </div>
             <div class="product-list clearfix row product_row" id="product-list"></div>
             <template id="product-card-template">
-               <div class="col-md-3 prod_col">
+               <div class="col-6 col-md-3 prod_col">
                   <div class="product-card">
                      <div class="sale_badge_prod">
                         <div class="discount-sticker"></div>
@@ -785,8 +847,33 @@
       <script src="js/script.js"></script>
       <script src="js/home.js"></script>
       <script src="js/filter-index.js"></script>
-      <script src="js/wislist.js"></script>
       <script src="js/quick-view.js"></script>
       <script src="js/searche.js"></script>
+      <script src="js/mobmenu.js"></script>
+
+      <style>
+#graphic-printed-cotton-t-shirt-37,
+#oversized-solid-t-shirt-38,
+#mens-classic-leather-strap-watch-39,
+#mens-digital-chrono-sports-watch-40,
+#womens-rose-gold-mesh-watch-41,
+#womens-diamond-dial-bracelet-watch-42,
+#girls-butterfly-charm-bracelet-31,
+#girls-heart-pendant-necklace-32,
+#classic-leather-tote-bag-33,
+#quilted-chain-sling-bag-34,
+#men-wallets-35,
+#men-wallets-genuine-leather-with-rfid-blocking-36,
+#womens-gold-plated-hoop-earrings-29,
+#womens-rose-gold-mesh-watch-41,
+#womens-silver-layered-necklace-30,
+#urban-skybag-mens-travel-backpack-25,
+#elegant-style-womens-backpack-26,
+#boys-cartoon-school-backpack-27,
+#girls-unicorn-print-backpack-28 {
+  display: none !important;
+}
+
+      </style>
    </body>
 </html>
