@@ -76,7 +76,7 @@ function renderDetails(product) {
   const sizeContainer = document.getElementById("sizes");
   const availableSizes = product.sizes || [];
 
-  if (!product.sizes || availableSizes.length === 0) {
+  if (!availableSizes.length) {
     if (sizePart) sizePart.style.display = "block";
     sizeContainer.innerHTML = `<button class="size-btn selected">One Size</button>`;
     selectedSize = "One Size";
@@ -262,9 +262,13 @@ function toggleWishlist() {
   updateCounts();
 }
 
+// ✅ Update count in all matching elements
 function updateCounts() {
-  document.getElementById("wishlist-count").textContent = wishlist.length;
-  document.getElementById("cart-count").textContent = cart.length;
+  const wishlistEls = document.querySelectorAll("#wishlist-count");
+  const cartEls = document.querySelectorAll("#cart-count");
+
+  wishlistEls.forEach(el => el.textContent = wishlist.length);
+  cartEls.forEach(el => el.textContent = cart.length);
 }
 
 function openImagePopup(index) {

@@ -1,17 +1,20 @@
 let products = [];
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 const productList = document.getElementById("product-list");
 const cartCount = document.getElementById("cart-count");
-const wishlistCount = document.getElementById("wishlist-count");
+const wishlistCountEls = document.querySelectorAll(".wishlist-count");
 const popup = document.getElementById("cart-popup");
 
 function updateCartCount() {
-  cartCount.textContent = cart.length;
+  if (cartCount) cartCount.textContent = cart.length;
 }
 
 function updateWishlistCount() {
-  wishlistCount.textContent = wishlist.length;
+  wishlistCountEls.forEach(el => {
+    el.textContent = wishlist.length;
+  });
 }
 
 function getStarIcons(rating) {
@@ -28,13 +31,10 @@ function renderProducts(filteredProducts = products) {
   filteredProducts.forEach(product => {
     const clone = template.content.cloneNode(true);
 
-    // Discount Sticker
     clone.querySelector(".discount-sticker").textContent =
       product.discount ? `${product.discount}% OFF` : "";
 
     const img = clone.querySelector(".product-img");
-
-    // Determine image from colors[] or images[]
     const hasColors = Array.isArray(product.colors) && product.colors.length > 0;
     const hasImages = Array.isArray(product.images) && product.images.length > 0;
 
@@ -50,23 +50,17 @@ function renderProducts(filteredProducts = products) {
 
     clone.querySelector(".product-link").href = `details.html?id=${product.id}`;
 
-    // Set product card ID and add classes
     const cardEl = clone.querySelector(".prod_col");
     if (cardEl) {
       const safeName = product.name.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
       cardEl.id = `${safeName}-${product.id}`;
 
-      if (!hasColors) {
-        cardEl.classList.add("nocolor_avl");
-      }
-
-      const notAvailable = product.availability === false || product.availability === "false";
-      if (notAvailable) {
+      if (!hasColors) cardEl.classList.add("nocolor_avl");
+      if (product.availability === false || product.availability === "false") {
         cardEl.classList.add("out_of_stock");
       }
     }
 
-    // Wishlist functionality (no popup)
     const wishlistBtn = clone.querySelector(".wishlist");
     wishlistBtn.dataset.id = product.id;
     if (wishlist.find(p => p.id === product.id)) {
@@ -90,7 +84,6 @@ function renderProducts(filteredProducts = products) {
     let selectedImage = firstImage;
     let selectedSize = Array.isArray(product.sizes) && product.sizes.length > 0 ? product.sizes[0] : null;
 
-    // Color dots
     const dotContainer = clone.querySelector(".color-dots");
     if (hasColors && dotContainer) {
       dotContainer.innerHTML = "";
@@ -110,7 +103,6 @@ function renderProducts(filteredProducts = products) {
       dotContainer.innerHTML = "";
     }
 
-    // Size dropdown
     const sizeSelect = clone.querySelector(".size-select");
     if (Array.isArray(product.sizes) && product.sizes.length > 0 && sizeSelect) {
       sizeSelect.innerHTML = "";
@@ -127,7 +119,6 @@ function renderProducts(filteredProducts = products) {
       sizeSelect.style.display = "none";
     }
 
-    // Add to Cart button
     const cartBtn = clone.querySelector(".add-cart");
     cartBtn.dataset.id = product.id;
     cartBtn.addEventListener("click", () => {
@@ -160,7 +151,6 @@ function renderProducts(filteredProducts = products) {
       setTimeout(() => popup.classList.remove("show"), 700);
     });
 
-    // Product info
     clone.querySelector(".product-name").textContent = product.name;
     clone.querySelector(".brand").textContent = product.brand;
     clone.querySelector(".rating").innerHTML = getStarIcons(product.rating);
@@ -170,7 +160,6 @@ function renderProducts(filteredProducts = products) {
     clone.querySelector(".size-list").textContent =
       Array.isArray(product.sizes) && product.sizes.length > 0 ? product.sizes.join(", ") : "Free Size";
 
-    // Eye & bag click
     const eyeBtn = clone.querySelector(".prd_eye_btn");
     const bagBtn = clone.querySelector(".bag-shopping");
     eyeBtn.dataset.id = product.id;
